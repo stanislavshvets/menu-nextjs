@@ -1,0 +1,117 @@
+.mob_menu_open {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 80vw;
+        height: 100vh;
+        background: #0D0D0D;
+        opacity: 90%;
+        border-left: 2px solid #F23D3D;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 95;
+        animation-name: menu;
+        animation-duration: 0.8s;
+}
+
+@keyframes menu {
+        0%{
+           right: -100%;
+        }
+        100%{
+                right: 0;
+        }
+}
+
+.header__menuMobileButton {
+        margin-top: 5.8%;
+        width: 50px;
+        height: 50px;
+        margin-right: 20px;
+        padding: 12px 9px;
+        background: none;
+        box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+        border: 1px solid #F23D3D;
+        border-radius: 1px;
+        cursor: pointer;
+        align-self: end;
+}
+
+.__firstBar {
+        margin: 0 auto;
+        height: 3px;
+        width: 33px;
+        border-radius: 10% /50%;
+        background: white;
+        transition: 0.4s;
+        -webkit-transform: rotate(-45deg) translate(0px, 0px);
+        transform: rotate(-45deg) translate(-2px, 1px);
+
+}
+
+.__thirdBar {
+        margin: 0 auto;
+        height: 3px;
+        width: 33px;
+        border-radius: 10% /50%;
+        background: white;
+        transition: 0.4s;
+        -webkit-transform: rotate(45deg) translate(0px, 0px);
+        transform: rotate(45deg) translate(-2px, -1px);
+
+}
+
+.nav {
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        text-decoration: none;
+        font-size: 19px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        z-index: 97;
+}
+
+.nav a {
+        width: 80%;
+        padding: 8% 40%;
+        border: 2px solid #F23D3D;
+        color: white;
+        transition: color .3s ease-in-out;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+
+.nav a:not(:first-child) {
+        margin-top: 10%;
+}
+
+.nav a[class='active'] {
+        color: #F23D3D;
+}
+
+.mob_callback_btn {
+        margin-bottom: 30%;
+        width: 60%;
+        padding: 6% 8%;
+        background: #F23D3D;
+        color: white;
+        transition: 0.4s ease-in;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+
+}
+
+@media (max-width: 849px) and (min-width: 429px) {
+        .header__menuMobileButton {
+                margin-right: 55px;
+        }
+}

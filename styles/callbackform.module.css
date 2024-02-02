@@ -1,0 +1,379 @@
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 3;
+    background: black;
+    opacity: 0.5;
+}
+
+.form {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 45%;
+    border: 2px solid #F23D3D;
+    background: white;
+    padding: 1.5% 3%;
+    z-index: 4;
+    display: flex;
+    flex-direction: column;
+}
+
+.label {
+    margin-top: 3%;
+    display: flex;
+    flex-direction: column;
+}
+
+.input {
+    margin-top: 16px;
+    padding: 27px 37px;
+    width: 100%;
+    border: 2px solid #0D0D0D;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    transition: 0.35s;
+}
+
+.input::placeholder {
+    color: #bbbbbb;
+}
+
+.input:focus {
+    -webkit-box-shadow: 0px 0px 5px 3px rgba(13,13,13,0.12);
+    -moz-box-shadow: 0px 0px 5px 3px rgba(13,13,13,0.12);
+    box-shadow: 0px 0px 5px 3px rgba(13,13,13,0.12);
+}
+
+.input:focus::placeholder {
+    color: transparent;
+}
+
+.btn_conteiner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn {
+    margin-top: 5%;
+    width: 40%;
+    border: 2px solid #F23D3D;
+    padding: 25px 10px;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    color: #0D0D0D;
+    background: none;
+    transition: 0.4s ease-in;
+}
+
+.btn:hover {
+    box-shadow: inset -11.8em 0 0 0 #F23D3D, inset 11.8em 0 0 0 #F23D3D;
+    color: white;
+}
+
+.btn_disabled {
+    margin-top: 5%;
+    width: 40%;
+    border: 2px solid #bbbbbb;
+    padding: 25px 10px;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    color: #bbbbbb;
+    background: none;
+}
+
+.cancel_btn {
+    margin-top: 5%;
+    width: 40%;
+    border: 2px solid #bbbbbb;
+    padding: 25px 10px;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    color: #bbbbbb;
+    background: none;
+    transition: 0.4s ease-in;
+}
+
+.cancel_btn:hover {
+    box-shadow: inset -11.8em 0 0 0 #bbbbbb, inset 11.8em 0 0 0 #bbbbbb;
+    color: white;
+}
+
+.policytext {
+    margin-top: 5%;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: #0D0D0D;
+}
+
+.policytext > a {
+    color: #0D0D0D;
+    text-decoration-line: underline;
+}
+
+.errors_class {
+    color: #F23D3D;
+    align-self: end;
+}
+
+@media (max-width: 2240px) and (min-width: 1871px){
+    .h2 {
+        font-size: 20px;
+
+    }
+}
+@media (max-width: 1870px) and (min-width: 1696px){
+    .h2 {
+        font-size: 18px;
+
+    }
+}
+
+@media (max-width: 1695px) and (min-width: 1346px){
+    .form {
+        width: 55%;
+    }
+
+    .h2 {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 1345px) and (min-width: 1199px){
+    .form {
+        width: 55%;
+    }
+
+    .input {
+        margin-top: 15px;
+        padding: 25px 30px;
+        border: 1.5px solid #0D0D0D;
+        font-size: 16px;
+    }
+
+    .btn {
+        margin-top: 5%;
+        border: 1.5px solid #F23D3D;
+        padding: 20px 10px;
+        font-size: 16px;
+    }
+
+    .btn_disabled {
+        margin-top: 5%;
+        border: 1.5px solid #bbbbbb;
+        padding: 20px 10px;
+        font-size: 16px;
+    }
+
+    .cancel_btn {
+        margin-top: 5%;
+        border: 1.5px solid #bbbbbb;
+        padding: 25px 10px;
+        font-size: 16px;
+    }
+
+    .h2 {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 1200px) and (min-width: 1021px){
+    .form {
+        width: 60%;
+    }
+
+    .input {
+        margin-top: 15px;
+        padding: 25px 30px;
+        border: 1.5px solid #0D0D0D;
+        font-size: 16px;
+    }
+
+    .btn {
+        margin-top: 5%;
+        border: 1.5px solid #F23D3D;
+        padding: 20px 10px;
+        font-size: 16px;
+    }
+
+    .btn_disabled {
+        margin-top: 5%;
+        border: 1.5px solid #bbbbbb;
+        padding: 20px 10px;
+        font-size: 16px;
+    }
+
+    .cancel_btn {
+        margin-top: 5%;
+        border: 1.5px solid #bbbbbb;
+        padding: 25px 10px;
+        font-size: 16px;
+    }
+
+    .h2 {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 1020px) and (min-width: 856px){
+    .form {
+        width: 70%;
+    }
+
+    .input {
+        margin-top: 15px;
+        padding: 25px 30px;
+        border: 1.5px solid #0D0D0D;
+        font-size: 16px;
+    }
+
+    .btn {
+        margin-top: 5%;
+        border: 1.5px solid #F23D3D;
+        padding: 20px 10px;
+        font-size: 16px;
+    }
+
+    .btn_disabled {
+        margin-top: 5%;
+        border: 1.5px solid #bbbbbb;
+        padding: 20px 10px;
+        font-size: 16px;
+    }
+
+    .cancel_btn {
+        margin-top: 5%;
+        border: 1.5px solid #bbbbbb;
+        padding: 25px 10px;
+        font-size: 16px;
+    }
+
+    .h2 {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 855px) and (min-width: 431px){
+    .form {
+        width: 80%;
+    }
+
+    .input {
+        margin-top: 15px;
+        padding: 25px 30px;
+        border: 1.5px solid #0D0D0D;
+        font-size: 16px;
+    }
+
+    .btn {
+        margin-top: 5%;
+        border: 1.5px solid #F23D3D;
+        padding: 20px 10px;
+        font-size: 16px;
+    }
+
+
+    .btn_disabled {
+        margin-top: 5%;
+        border: 1.5px solid #bbbbbb;
+        padding: 20px 10px;
+        font-size: 16px;
+    }
+
+    .cancel_btn {
+        margin-top: 5%;
+        border: 1.5px solid #bbbbbb;
+        padding: 25px 10px;
+        font-size: 16px;
+    }
+
+    .h2 {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 430px) {
+
+    .form {
+        width: 85%;
+    }
+
+    .h2 {
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        color: #0D0D0D;
+        text-align: justify;
+    }
+
+    .label {
+        margin-top: 3%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .input {
+        margin-top: 4%;
+        padding: 5% 6%;
+        font-size: 17px;
+    }
+
+    .btn_conteiner {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .btn {
+        width: 45%;
+        padding: 6% 4%;
+        font-size: 16px;
+    }
+
+    .btn_disabled {
+        width: 45%;
+        padding: 6% 4%;
+        font-size: 16px;
+    }
+
+    .cancel_btn {
+        width: 45%;
+        padding: 6% 4%;
+        font-size: 16px;
+    }
+
+    .cancel_btn:hover {
+        box-shadow: inset -11.8em 0 0 0 #bbbbbb, inset 11.8em 0 0 0 #bbbbbb;
+        color: white;
+    }
+
+    .policytext {
+        margin-bottom: 3%;
+        font-size: 8.9px;
+
+    }
+
+    .policytext > a {
+        color: #0D0D0D;
+        text-decoration-line: underline;
+    }
+
+    .errors_class {
+        margin-top: 1%;
+        font-size: 12px;
+    }
+}
